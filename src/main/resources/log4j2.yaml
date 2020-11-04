@@ -15,12 +15,6 @@ Configurarion:
       fileName: ${log-path}/custom-log.log
       PatternLayout:
         pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
-      filePattern: "logs/archive/custom-log.log.%d{yyyy-MM-dd-hh-mm}.gz"
-      Policies:
-        SizeBasedTriggeringPolicy:
-          size: 10 M
-      DefaultRollOverStrategy:
-        max: 30
   Loggers:
     Root:
       level: debug
